@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25/10/2023 às 02:46
+-- Tempo de geração: 26/10/2023 às 02:20
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -255,6 +255,21 @@ CREATE TABLE `resultado` (
   `atleta_id` int(11) DEFAULT NULL,
   `jogos_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `resultado`
+--
+
+INSERT INTO `resultado` (`ID`, `gol`, `atleta_id`, `jogos_id`) VALUES
+(1, 2, 10, 1),
+(2, 1, 11, 1),
+(3, 1, 21, 1),
+(4, 2, 30, 2),
+(5, 1, 41, 2),
+(6, 1, 42, 2),
+(7, 2, 53, 3),
+(8, 1, 76, 4),
+(9, 2, 86, 4);
 
 -- --------------------------------------------------------
 
